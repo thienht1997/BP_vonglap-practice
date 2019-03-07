@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh lai ngan hang</title>
+</head>
+<body>
+<script>
+    sotien = parseInt(prompt('Nhap so tien ban dau'));  
+    sothang = parseInt(prompt('Nhap so thang')); 
+    laisuat = parseFloat(prompt('Nhap lai suat % / thang cua ngan hang'));
+    var laithang;
+    var laitong = 0;
+    for (var i = 1; i<=sothang; i++)
+    {
+       lai=sotien*laisuat/100;
+       sotien+= lai;
+       laitong+=lai	
+    }
+	confirm("Tong so tien lai sau " + sothang + " thang la " +laitong)
+</script>
+</body>
+</html>
